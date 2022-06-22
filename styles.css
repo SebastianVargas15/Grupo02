@@ -65,6 +65,7 @@ span {
     outline: none;
     transition: 0.2s all;
 }
+
 .btn-signin:active {
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
@@ -103,7 +104,7 @@ span {
 .firsth1 {
     font-family: 'Titillium Web', sans-serif;
     font-style: normal;
-    font-size: 55px;
+    font-size: 3.4375rem;
     line-height: 68.6px;
     font-weight: 400;
     color: #39434D;
@@ -114,7 +115,7 @@ span {
     font-family: 'Titillium Web';
     font-style: normal;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 3.4375rem;
     line-height: 140%;
     color: #3011BC;
     margin-top: -25px;
@@ -198,6 +199,9 @@ span {
 
 .hijo1 img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .hijo2 {
@@ -226,7 +230,62 @@ span {
 
 }
 
-.container-items-hijo2 img{
+.container-items-hijo2 img {
     width: 50px;
     height: 50px;
+}
+
+@media (max-width: 500px) {
+  .navbar{
+    flex-wrap: wrap;
+  }
+  .navbar ul{
+    order: 1; 
+    margin-top: 10px;
+    width: 100%;
+
+  }
+
+  
+  
+    .container {
+        flex-direction: column;
+    }
+
+    .container-container1 {
+        width: 100%;
+    }
+    .container-title{
+        width: 100%;
+        text-align: center;
+    }
+    .container-container2 {
+        width: 100%;
+    }
+
+    .firsth1,
+    .secondh1 {
+        font-size: 3.02rem;
+        width: 100%;
+    }
+    .form-group{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-form{
+        justify-content: center;
+        align-items: center;
+    }
+    .container-logos{
+        width: 100%;
+        text-align: center;
+    }
+    .form-input2{
+        text-align: center;
+    }
+    .btn-form{
+        width: 100%;
+    }
+
 }
